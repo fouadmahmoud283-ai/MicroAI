@@ -1,0 +1,5 @@
+# MicroPython AI/LLM Library Requirements
+# Note: These are for reference - install via upip or manually
+
+micropython-urequests>=0.6
+micropython-ujson
