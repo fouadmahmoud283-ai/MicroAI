@@ -182,6 +182,36 @@ result = robot.process_navigation_command(
 print("🗺️ Navigation plan:", result)
 ```
 
+### ⚡ Energy Monitoring
+```python
+from ai_llm import EnergyMonitorApp
+
+# ⚡ Create energy monitoring assistant
+energy_monitor = EnergyMonitorApp(
+    ai_client=client,
+    config={
+        "utility_types": ["electricity", "water", "gas"],
+        "rate_costs": {
+            "electricity": {"per_unit": 0.12, "currency": "USD", "unit": "kWh"},
+            "water": {"per_unit": 0.005, "currency": "USD", "unit": "gallon"},
+            "gas": {"per_unit": 1.50, "currency": "USD", "unit": "therm"}
+        }
+    }
+)
+
+# 📊 Analyze consumption data
+consumption_data = {
+    "electricity": {"usage": 450, "peak_usage": 280},
+    "water": {"usage": 2500},
+    "gas": {"usage": 45}
+}
+
+analysis = energy_monitor.analyze_consumption(consumption_data)
+cost_estimate = energy_monitor.get_cost_estimate(consumption_data)
+recommendations = energy_monitor.get_optimization_recommendations(consumption_data)
+print("💡 Recommendations:", recommendations)
+```
+
 ---
 
 ## 🎯 Application Showcase
@@ -675,5 +705,6 @@ All the developers and testers who help improve MicroAI
 ⭐ **If MicroAI helped your project, please consider giving it a star!** ⭐
 
 </div>
+
 
 
