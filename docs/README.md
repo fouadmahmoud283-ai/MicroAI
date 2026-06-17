@@ -56,6 +56,7 @@
 - **📅 Task Scheduler** - Smart task automation
 - **🌤️ Weather Analyzer** - Sensor data intelligence
 - **⚙️ Motor Controller** - Natural language motor control
+- **⚡ Energy Monitor** - Utility monitoring & cost analysis
 
 </td>
 </tr>
@@ -82,7 +83,8 @@ MicroAI/
 │           ├── 🤖 robot_navigator.py
 │           ├── 📅 task_scheduler.py
 │           ├── 🌤️ weather_analyzer.py
-│           └── ⚙️ motor_controller.py
+│           ├── ⚙️ motor_controller.py
+│           └── ⚡ energy_monitor.py    # Utility monitoring
 ├── 📂 examples/                       # Ready-to-run examples
 ├── 📂 docs/                          # Comprehensive documentation
 ├── 🚀 main.py                        # Quick start example
@@ -238,6 +240,13 @@ print("🗺️ Navigation plan:", result)
 - **🛡️ Safety Validation**: Speed and angle limits
 - **🔄 Multi-motor**: Coordinate multiple motors
 - **📊 JSON Responses**: Structured command output
+
+### ⚡ Energy Monitor
+- **📊 Multi-utility**: Electricity, water, and gas tracking
+- **💰 Cost Analysis**: Rate tier calculations and estimates
+- **🔍 Anomaly Detection**: Unusual usage pattern identification
+- **📈 Period Comparison**: Track usage changes over time
+- **💡 Optimization**: AI-driven cost-saving recommendations
 
 </details>
 
@@ -666,3 +675,5 @@ All the developers and testers who help improve MicroAI
 ⭐ **If MicroAI helped your project, please consider giving it a star!** ⭐
 
 </div>
+
+

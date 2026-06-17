@@ -10,6 +10,7 @@ from .security_system import SecuritySystem
 from .lighting_controller import LightingController
 from .robot_navigator import RobotNavigator
 from .task_scheduler import TaskScheduler
+from .energy_monitor import EnergyMonitorApp
 
 __all__ = [
     'BaseAIApplication',
@@ -19,5 +20,6 @@ __all__ = [
     'SecuritySystem',
     'LightingController',
     'RobotNavigator',
-    'TaskScheduler'
+    'TaskScheduler',
+    'EnergyMonitorApp'
 ]
